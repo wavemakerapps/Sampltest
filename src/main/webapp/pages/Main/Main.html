@@ -3,7 +3,15 @@
     <wm-top-nav name="topnav" content="topnav"></wm-top-nav>
     <wm-content name="content">
         <wm-left-panel columnwidth="2" name="leftpanel" content="leftnav"></wm-left-panel>
-        <wm-page-content columnwidth="8" paddingleft="15" paddingright="15" name="mainContent">
+        <wm-page-content padding="unset 15px" columnwidth="8" name="mainContent">
+            <wm-composite name="composite1">
+                <wm-label name="label1" class="col-md-3 control-label"></wm-label>
+                <wm-container name="container1" class="col-md-9">
+                    <wm-select name="select1"></wm-select>
+                </wm-container>
+            </wm-composite>
+            <wm-select name="select2" class="select-locale" dataset="bind:Variables.supportedLocale.dataSet" on-change="changeAppLocale($scope)" placeholder="Select Language"></wm-select>
+            <wm-label required="false" caption="bind:appLocale.Message" name="label2" padding="unset 0.5em"></wm-label>
         </wm-page-content>
         <wm-right-panel columnwidth="2" name="rightpanel" content="rightnav"></wm-right-panel>
     </wm-content>

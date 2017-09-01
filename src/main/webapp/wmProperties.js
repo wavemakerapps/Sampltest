@@ -7,7 +7,7 @@ var _WM_APP_PROPERTIES = {
   "name" : "Sampltest",
   "platformType" : "WEB",
   "securityEnabled" : "false",
-  "supportedLanguages" : "en",
+  "supportedLanguages" : "en,de,af",
   "timeFormat" : "",
   "type" : "APPLICATION",
   "version" : "1.0"
